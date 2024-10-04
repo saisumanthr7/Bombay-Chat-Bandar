@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Adjusted for equal spacing */
+    align-items: center; /* Vertically center items */
+    padding: 16px;
+    background-color: rgb(49,49,49);
+    box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-logo {
+    display: flex; /* Flexbox to align items in a row */
+    align-items: center; /* Vertically center the logo and text */
+}
+
+.nav-logo p {
+    color: #f59309;
+    font-size: 38px;
+    font-weight: 600;
+    margin-left: 10px; 
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    color: #f59309;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #f59309;
+}
