@@ -1,15 +1,15 @@
 .navbar {
     display: flex;
-    justify-content: space-between; /* Adjusted for equal spacing */
-    align-items: center; /* Vertically center items */
-    padding: 16px;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 8px;
     background-color: rgb(49,49,49);
     box-shadow: 0 1px 3px -2px black;
 }
 
 .nav-logo {
-    display: flex; /* Flexbox to align items in a row */
-    align-items: center; /* Vertically center the logo and text */
+    display: flex; 
+    align-items: center; 
 }
 
 .nav-logo p {
@@ -26,16 +26,6 @@
     gap: 50px;
 }
 
-.nav-menu li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    cursor: pointer;
-    color: #f59309;
-}
-
 .nav-menu hr {
     border: none;
     width: 80%;
@@ -43,3 +33,23 @@
     border-radius: 10px;
     background: #f59309;
 }
+
+.nav-menu a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    color: #f59309; 
+}
+
+.nav-menu li:hover {
+    color: #37ff00;
+}
+
