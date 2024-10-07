@@ -1,0 +1,16 @@
+.testimonials {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .testimonial-item {
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+  
+  .testimonial-item p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
