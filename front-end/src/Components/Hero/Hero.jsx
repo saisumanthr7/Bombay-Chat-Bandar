@@ -1,12 +1,14 @@
 import React from 'react';
 import './Hero.css';
+import backgroundImage from '../Assets/Chatbackgroudimage.png'
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="hero-content">
-        <h1>Welcome to Bombay Chat Bandar</h1>
-        <p>Explore the best of street food and tantalizing Chinese flavors!</p>
+        <h2><span className="highlight">WELCOME TO</span></h2>
+           <h1><span className="highlight">BOMBAY CHAT BANDAR</span> </h1>
+        <p><span className="highlight">Explore the best of street food and tantalizing Chinese flavors!</span></p>
         <button className="explore-btn">Explore Menu</button>
       </div>
     </div>
