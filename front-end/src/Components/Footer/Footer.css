@@ -1,16 +1,61 @@
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #333;   /* Dark background */
+  color: white;             /* White text */
+  padding: 40px 20px;       /* Padding for space */
+  display: flex;
+  flex-direction: column;   /* Stack the menu and social links vertically */
+  justify-content: center;  /* Center content vertically */
+  align-items: center;      /* Center content horizontally */
+  text-align: center;       /* Ensure text is centered */
+  height: 200px;            /* Adjust height to ensure proper spacing */
+  margin: 0 auto;           /* Center the footer on the page */
+}
+
+/* Footer Menu Links */
+.footer-menu {
+  display: flex;
+  gap: 30px;                /* Space between menu items */
+  justify-content: center;  /* Center the menu items */
+  margin-bottom: 20px;      /* Space between menu and social icons */
+}
+
+.footer-menu a {
+  color: white;             /* White text */
+  text-decoration: none;    /* Remove underline */
+  font-size: 1.2rem;        /* Slightly larger font */
+  transition: color 0.3s ease;  /* Smooth transition for hover */
+}
+
+.footer-menu a:hover {
+  color: #ff6f00;           /* Change color on hover */
+}
+
+/* Social Media Links */
+.footer-social {
+  display: flex;
+  gap: 20px;                /* Space between social icons */
+  justify-content: center;  /* Center the social icons */
+}
+
+.footer-social a {
+  color: white;             /* White for the social icons */
+  font-size: 1.5rem;        /* Bigger icon size */
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ff6f00;           /* Change icon color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;     /* Stack items vertically on smaller screens */
+    height: auto;               /* Adjust height for small screens */
   }
-  
-  .footer a {
-    color: #ff6f00;
-    text-decoration: none;
+
+  .footer-menu {
+    justify-content: center;    /* Center menu items */
+    margin-bottom: 20px;        /* Add space between menu and social icons */
   }
-  
-  .footer a:hover {
-    color: #ff8c33;
-  }
-  
+}

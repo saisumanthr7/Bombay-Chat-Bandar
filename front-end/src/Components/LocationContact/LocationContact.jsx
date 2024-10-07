@@ -1,19 +1,29 @@
 import React from 'react';
 import './LocationContact.css';
+import shopImage from '../Assets/Chatbackgroudimage.png'
 
 const LocationContact = () => {
   return (
     <section className="location-contact">
-      <h2>Find Us & Contact Us</h2>
       <div className="contact-container">
-        <div className="location">
-          <h3>Our Location</h3>
-          <p>123 Chat Street, Mumbai, India</p>
+
+        <img src={shopImage} alt="Bombay Chat Bandar Shop"  className="shop-image"/>
+
+        <div className="location-block">
+          <h3>Location</h3>
+          <p>123 chat Street, <br/>Mumbai, India</p>
         </div>
-        <div className="contact">
-          <h3>Contact Us</h3>
+
+        <div className="hours-block">
+          <h3>Hours</h3>
+          <p>Monday - Friday: 10 AM - 10 PM</p>
+          <p>Saturday - Sunday: 12 PM - 12 AM</p>
+        </div>
+
+        <div className="contact-block">
+          <h3>Contact</h3>
           <p>Email: contact@bombaychatbandar.com</p>
-          <p>Phone: +91 123 456 7890</p>
+          <p>Phone: +911234567899</p>
         </div>
       </div>
     </section>
