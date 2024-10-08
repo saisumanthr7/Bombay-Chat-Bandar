@@ -1,9 +1,52 @@
-import React from 'react';
-import Hero from '../Components/Hero/Hero'
+import React, { useState } from 'react';
+import Chat from '../Components/Item/ChatMenu'; // Import Chat component
+import Chinese from '../Components/Item/ChineseMenu'; // Import Chinese component
+import Drinks from '../Components/Item/DrinksMenu'; // Import Drinks component
+import './Shop.css'; // Import global styles for Shop page
 
 const Shop = () => {
+  const [activeTab, setActiveTab] = useState(''); // State to keep track of selected tab
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab); // Update active tab when clicked
+  };
+
   return (
-    <Hero/>
+    <div className="shop">
+      <h1 className="shop-title">MENU</h1>
+
+      {/* Tabs Section with background images */}
+      <div className="tabs">
+        <div
+          className={`tab ${activeTab === 'chat' ? 'active' : ''}`}
+          style={{ backgroundImage: 'url("/images/chat-background.jpg")' }}  // Update image paths
+          onClick={() => handleTabClick('chat')}
+        >
+          Chat
+        </div>
+        <div
+          className={`tab ${activeTab === 'chinese' ? 'active' : ''}`}
+          style={{ backgroundImage: 'url("/images/chinese-background.jpg")' }}  // Update image paths
+          onClick={() => handleTabClick('chinese')}
+        >
+          Chinese
+        </div>
+        <div
+          className={`tab ${activeTab === 'shakes' ? 'active' : ''}`}
+          style={{ backgroundImage: 'url("/images/shakes-background.jpg")' }}  // Update image paths
+          onClick={() => handleTabClick('shakes')}
+        >
+          Drinks & Shakes
+        </div>
+      </div>
+
+      {/* Render the corresponding menu based on the selected tab */}
+      <div className="menu-content">
+        {activeTab === 'chat' && <Chat/>}
+        {activeTab === 'chinese' && <Chinese/>}
+        {activeTab === 'shakes' && <Drinks/>}
+      </div>
+    </div>
   );
 };
 

@@ -1,0 +1,46 @@
+.shop {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .shop-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  /* Tab Section with background images */
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+  
+  .tab {
+    width: 30%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .tab:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tab.active {
+    transform: scale(1.05);
+  }
+  
+  .menu-content {
+    padding: 20px;
+  }
+  
