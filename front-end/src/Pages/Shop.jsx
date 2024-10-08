@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Chat from '../Components/Item/ChatMenu'; // Import Chat component
-import Chinese from '../Components/Item/ChineseMenu'; // Import Chinese component
-import Drinks from '../Components/Item/DrinksMenu'; // Import Drinks component
-import './Shop.css'; // Import global styles for Shop page
+import Chat from '../Components/Item/ChatMenu';
+import Chinese from '../Components/Item/ChineseMenu'; 
+import Drinks from '../Components/Item/DrinksMenu'; 
+import './Shop.css'; 
 
 const Shop = () => {
   const [activeTab, setActiveTab] = useState(''); // State to keep track of selected tab
