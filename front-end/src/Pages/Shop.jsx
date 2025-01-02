@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Chat from '../Components/Item/ChatMenu';
-import Chinese from '../Components/Item/ChineseMenu'; 
-import Drinks from '../Components/Item/DrinksMenu'; 
+import Chat from '../Components/Menu/ChatMenu';
+import Chinese from '../Components/Menu/ChineseMenu'; 
+import Drinks from '../Components/Menu/DrinksMenu'; 
 import './Shop.css'; 
 
 const Shop = () => {
